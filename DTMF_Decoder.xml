@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Projects\Amateur Projects\MicroController Projects\PIC Projects\MaplePIC\FPGA\MaplePIC_System\DTMF_Decoder.sch</source>
+    <date>29/07/2023 09:48:48</date>
+    <tool>Eeschema (5.1.0)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>DTMF_Decoder.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U105">
+      <value>DTMFDecoder</value>
+      <libsource lib="MaplePIC" part="DTMFDecoder" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>64C2E036</tstamp>
+    </comp>
+    <comp ref="U101">
+      <value>export</value>
+      <libsource lib="MaplePIC" part="export" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>64C2ECB0</tstamp>
+    </comp>
+    <comp ref="U102">
+      <value>export</value>
+      <libsource lib="MaplePIC" part="export" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>64C2F4F6</tstamp>
+    </comp>
+    <comp ref="U106">
+      <value>export</value>
+      <libsource lib="MaplePIC" part="export" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>64C2FF09</tstamp>
+    </comp>
+    <comp ref="U107">
+      <value>export</value>
+      <libsource lib="MaplePIC" part="export" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>64C302C1</tstamp>
+    </comp>
+    <comp ref="U108">
+      <value>export</value>
+      <libsource lib="MaplePIC" part="export" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>64C3055F</tstamp>
+    </comp>
+    <comp ref="U109">
+      <value>export</value>
+      <libsource lib="MaplePIC" part="export" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>64C308B5</tstamp>
+    </comp>
+    <comp ref="U110">
+      <value>export</value>
+      <libsource lib="MaplePIC" part="export" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>64C30F22</tstamp>
+    </comp>
+    <comp ref="U111">
+      <value>export</value>
+      <libsource lib="MaplePIC" part="export" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>64C31138</tstamp>
+    </comp>
+    <comp ref="U103">
+      <value>export</value>
+      <libsource lib="MaplePIC" part="export" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>64C2F6A8</tstamp>
+    </comp>
+    <comp ref="U104">
+      <value>MicroSequencer</value>
+      <libsource lib="MaplePIC" part="MicroSequencer" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>64C36499</tstamp>
+    </comp>
+    <comp ref="U113">
+      <value>export</value>
+      <libsource lib="MaplePIC" part="export" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>64C39D2B</tstamp>
+    </comp>
+    <comp ref="U112">
+      <value>export</value>
+      <libsource lib="MaplePIC" part="export" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>64C39D31</tstamp>
+    </comp>
+    <comp ref="U114">
+      <value>export</value>
+      <libsource lib="MaplePIC" part="export" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>64C3A69D</tstamp>
+    </comp>
+    <comp ref="U115">
+      <value>export</value>
+      <libsource lib="MaplePIC" part="export" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>64C5E05F</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="MaplePIC" part="DTMFDecoder">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DTMFDecoder</field>
+      </fields>
+      <pins>
+        <pin num="1" name="clk" type="input"/>
+        <pin num="2" name="reset" type="input"/>
+        <pin num="3" name="Audio_in[15:0]" type="input"/>
+        <pin num="4" name="Detect_out" type="output"/>
+        <pin num="5" name="Detect_digit[3:0]" type="output"/>
+        <pin num="6" name="rdena" type="input"/>
+        <pin num="7" name="wrena" type="input"/>
+        <pin num="8" name="reg_addr[7:0]" type="input"/>
+        <pin num="9" name="rd_data[7:0]" type="output"/>
+        <pin num="10" name="wr_data[7:0]" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="MaplePIC" part="MicroSequencer">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MicroSequencer</field>
+      </fields>
+      <pins>
+        <pin num="1" name="clk" type="input"/>
+        <pin num="2" name="reset" type="input"/>
+        <pin num="3" name="Main_Rx_Audio[15:0]" type="input"/>
+        <pin num="4" name="Main_Tx_Audio[15:0]" type="output"/>
+        <pin num="5" name="Link_Rx_Audio[15:0]" type="input"/>
+        <pin num="6" name="Link_Tx_Audio[15:0]" type="output"/>
+        <pin num="7" name="COR_Heartbeat_LED" type="output"/>
+        <pin num="8" name="DTMF_Detect" type="input"/>
+        <pin num="9" name="DTMF_Digit[3:0]" type="input"/>
+        <pin num="10" name="rdena" type="input"/>
+        <pin num="11" name="wrena" type="input"/>
+        <pin num="12" name="reg_addr[7:0]" type="input"/>
+        <pin num="13" name="wr_data[7:0]" type="input"/>
+        <pin num="14" name="rd_data_in[7:0]" type="input"/>
+        <pin num="15" name="rd_data[7:0]" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="MaplePIC" part="export">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">export</field>
+      </fields>
+      <pins>
+        <pin num="I" name="exported" type="output"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="MaplePIC">
+      <uri>C:\Projects\Amateur Projects\MicroController Projects\PIC Projects\MaplePIC\FPGA\MaplePIC_System/MaplePIC.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(U104-Pad10)">
+      <node ref="U104" pin="10"/>
+      <node ref="U105" pin="6"/>
+      <node ref="U107" pin="I"/>
+    </net>
+    <net code="2" name="Net-(U104-Pad4)">
+      <node ref="U106" pin="I"/>
+      <node ref="U104" pin="4"/>
+    </net>
+    <net code="3" name="Net-(U104-Pad5)">
+      <node ref="U112" pin="I"/>
+      <node ref="U104" pin="5"/>
+    </net>
+    <net code="4" name="Net-(U104-Pad6)">
+      <node ref="U104" pin="6"/>
+      <node ref="U113" pin="I"/>
+    </net>
+    <net code="5" name="Net-(U104-Pad13)">
+      <node ref="U110" pin="I"/>
+      <node ref="U104" pin="13"/>
+      <node ref="U105" pin="10"/>
+    </net>
+    <net code="6" name="Net-(U104-Pad12)">
+      <node ref="U104" pin="12"/>
+      <node ref="U105" pin="8"/>
+      <node ref="U109" pin="I"/>
+    </net>
+    <net code="7" name="Net-(U104-Pad9)">
+      <node ref="U105" pin="5"/>
+      <node ref="U104" pin="9"/>
+    </net>
+    <net code="8" name="Net-(U103-PadI)">
+      <node ref="U104" pin="3"/>
+      <node ref="U103" pin="I"/>
+      <node ref="U105" pin="3"/>
+    </net>
+    <net code="9" name="Net-(U102-PadI)">
+      <node ref="U102" pin="I"/>
+      <node ref="U104" pin="2"/>
+      <node ref="U105" pin="2"/>
+    </net>
+    <net code="10" name="Net-(U104-Pad14)">
+      <node ref="U104" pin="14"/>
+      <node ref="U105" pin="9"/>
+    </net>
+    <net code="11" name="/LED_2">
+      <node ref="U105" pin="4"/>
+      <node ref="U115" pin="I"/>
+      <node ref="U104" pin="8"/>
+    </net>
+    <net code="12" name="Net-(U104-Pad15)">
+      <node ref="U104" pin="15"/>
+      <node ref="U111" pin="I"/>
+    </net>
+    <net code="13" name="Net-(U104-Pad11)">
+      <node ref="U104" pin="11"/>
+      <node ref="U105" pin="7"/>
+      <node ref="U108" pin="I"/>
+    </net>
+    <net code="14" name="Net-(U101-PadI)">
+      <node ref="U105" pin="1"/>
+      <node ref="U101" pin="I"/>
+      <node ref="U104" pin="1"/>
+    </net>
+    <net code="15" name="/LED_1">
+      <node ref="U104" pin="7"/>
+      <node ref="U114" pin="I"/>
+    </net>
+  </nets>
+</export>
