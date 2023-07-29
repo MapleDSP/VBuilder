@@ -21,7 +21,6 @@ module DTMF_Decoder (
 wire	[7:0]			LocalWire_Net_10;
 wire	[3:0]			LocalWire_Net_7;
 
-
 //---------Instantiation of DTMFDecoder---------
 
 DTMFDecoder
@@ -38,7 +37,6 @@ DTMFDecoder
 			.rd_data             		(LocalWire_Net_10),
 			.wr_data             		(wr_data)
 		);
-
 
 //---------Instantiation of MicroSequencer---------
 
